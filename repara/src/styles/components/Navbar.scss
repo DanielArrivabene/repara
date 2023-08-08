@@ -3,6 +3,9 @@
 
 .navbar_top {
     background-color: $main-color;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
 
     a#navbar_top__logo {
         color: $text-light-color;
@@ -10,7 +13,35 @@
         font-weight: bolder;
     }
 
-    a:not(#navbar_top__logo) {
-        @include transition_text;
+    .navbar_top__item {
+        margin-left: 2em;
+
+        a:not(#navbar_top__logo) {
+            @include transition_text;
+            padding: 0;
+        }
+    
+        p {
+            margin: 0;
+            color: $text-light-color;
+
+            svg {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.navbar_bottom {
+    background-color: $main-color-dark;
+    box-shadow: 0px 0px 15px #00000070;
+
+    .navbar_bottom__item {
+        margin-right: 2em;
+
+        a {
+            @include transition_text;
+            padding: 0 !important;
+        }
     }
 }

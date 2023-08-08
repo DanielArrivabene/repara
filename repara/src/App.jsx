@@ -1,12 +1,14 @@
 import './App.scss'
 
-import Navbar from './components/Navbar'
+import Navbar from './components/header/Navbar'
+import Carousel from './components/carousel/Carousel'
 
 function App() {
 
   return (
     <>
       <Navbar />
+      <Carousel />
     </>
   )
 }
