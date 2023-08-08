@@ -8,11 +8,13 @@ function CarouselControls() {
             <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
         </div>
 
-        <button className="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon"></span>
-        </button>
-        <button className="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
-            <span className="carousel-control-next-icon"></span>
+        <button className="carousel_control">
+            <span className="carousel_icon_container" data-bs-target="#banner" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon"></span>
+            </span>
+            <span className="carousel_icon_container" data-bs-target="#banner" data-bs-slide="next">
+              <span className="carousel-control-next-icon"></span>
+            </span>
         </button>
       </>
   )

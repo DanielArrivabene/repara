@@ -11,6 +11,7 @@ function App() {
         <Navbar />
         <Carousel />
       </div>
+      <p>dsadsadsadsaas</p>
     </>
   )
 }
