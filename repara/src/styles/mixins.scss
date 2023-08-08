@@ -1,9 +1,10 @@
 @mixin btn {
     background-color: $secondary-color;
     color: $text-light-color;
-    padding: 1em 4em;
+    padding: .5em 2em;
     border-radius: $border-radious;
     border: 1px solid $secondary-color;
+    margin-top: 1em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 
