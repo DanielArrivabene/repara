@@ -1,0 +1,16 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.navbar_top {
+    background-color: $main-color;
+
+    a#navbar_top__logo {
+        color: $text-light-color;
+        font-size: 1.9em;
+        font-weight: bolder;
+    }
+
+    a:not(#navbar_top__logo) {
+        @include transition_text;
+    }
+}

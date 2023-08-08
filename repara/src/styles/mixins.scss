@@ -1,0 +1,30 @@
+@mixin btn {
+    background-color: $secondary-color;
+    color: $text-light-color;
+    padding: 1em 4em;
+    border-radius: $border-radious;
+    border: 1px solid $secondary-color;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: transparent;
+        color: $secondary-color;
+    }
+}
+
+@mixin transition_bg {
+    background-color: $main-color;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+@mixin transition_text {
+    color: $text-light-color;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}

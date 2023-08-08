@@ -1,0 +1,19 @@
+@import './styles/variables.scss';
+@import './styles/mixins.scss';
+
+* {
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+}
+
+a {
+  @include transition_text;
+  
+  text-decoration: none;
+}
