@@ -7,8 +7,10 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Carousel />
+      <div className="full_screen">
+        <Navbar />
+        <Carousel />
+      </div>
     </>
   )
 }

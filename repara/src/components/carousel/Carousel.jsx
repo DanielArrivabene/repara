@@ -1,32 +1,29 @@
 import '../../styles/components/Carousel.scss'
+import CarouselControls from './CarouselControls'
 
 function Carrousel() {
   return (
-    <section className="carousel">
-      <article className="carousel_container">
-        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block w-100" src="../../assets/img/about-img.jpg" alt="Primeiro Slide" />
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide" />
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide" />
+    <section id="banner" className="carousel slide" data-bs-ride="carousel">
+      <CarouselControls />
+
+        <article className="carousel_container carousel-inner mt-auto">
+          <div className="carousel-item active">
+            <div className="carousel-caption">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque eos non reiciendis consequuntur adipisci quae aspernatur. Dolores minima incidunt ullam sed, aperiam dolore tenetur aliquam eveniet temporibus ex iste. Repellendus.
             </div>
           </div>
-          <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Anterior</span>
-          </a>
-          <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Próximo</span>
-          </a>
-        </div>
-      </article>
-    </section>
+          <div className="carousel-item">
+            <div className="carousel-caption">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque eos non reiciendis consequuntur adipisci quae aspernatur. Dolores minima incidunt ullam sed, aperiam dolore tenetur aliquam eveniet temporibus ex iste. Repellendus.
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="carousel-caption">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque eos non reiciendis consequuntur adipisci quae aspernatur. Dolores minima incidunt ullam sed, aperiam dolore tenetur aliquam eveniet temporibus ex iste. Repellendus.
+            </div>
+          </div>
+        </article>
+  </section>
   )
 }
 
