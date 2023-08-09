@@ -12,6 +12,11 @@ body {
   background-color: $bg-color;
 }
 
+p,
+ a {
+  font-size: 1.035em
+}
+
 a {
   @include transition_text;
   
