@@ -1,4 +1,4 @@
-function NavbarBottom() {
+function MenuLinks() {
 
     const links = [
         {text: 'Home', destiny: '#'},
@@ -9,10 +9,10 @@ function NavbarBottom() {
     ]
 
   return (
-    <div className="navbar_bottom navbar navbar-expand-sm p-3 px-4">
+    <div className="navbar_menu navbar">
         <ul className="navbar-nav">
             {links && links.map((item) => (
-                <li key={item.text} className="navbar_bottom__item nav-item">
+                <li key={item.text} className="navbar_menu__item nav-item">
                     <a className="nav-link" href={item.destiny}>{item.text}</a>
                 </li>
             ))}
@@ -21,4 +21,4 @@ function NavbarBottom() {
   )
 }
 
-export default NavbarBottom
+export default MenuLinks

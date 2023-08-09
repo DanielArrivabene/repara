@@ -3,6 +3,7 @@
 
 #menu_icon {
     @include transition_text;
+    display: none;
     background-color: transparent;
     border: none;
     font-size: 2.3em;
@@ -28,9 +29,18 @@
         border-bottom: none;
         padding: 0 2em;
 
+        
+    }
+
+    .modal-body {
+        text-align: end;
+        padding: 0 1em;
+
         button {
             background-color: transparent;
             border: none;
+            z-index: 99;
+            position: relative;
 
             span {
                 @include transition_text;
@@ -39,37 +49,17 @@
                 height: 20px;
             }
         }
-    }
-
-    .modal-body {
         
-        .navbar_bottom {
-            box-shadow: none;
+        .navbar_menu {
             justify-content: center;
+            margin-top: -65px;
 
-            ul {
-                flex-direction: column;
-                align-items: center;
-
-                li {
-                    margin-right: 0;
-                    margin-bottom: 1em;
-                    font-size: 1.2em;
-                }
-            }
-        }
-    }
-
-    ul {
-        justify-content: center;
-
-        li {
-            margin: 0;
-
-            span {
-                display: block;
-                margin-bottom: 2em;
+            li {
                 text-align: center;
+
+                a {
+                    @include transition_text;
+                }
             }
         }
     }

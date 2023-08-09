@@ -3,8 +3,7 @@ import { useState } from 'react';
 
 import "../../styles/components/Menu.scss";
 
-import NavbarTopLink from './NavbarTopLink'
-import NavbarBottom from "./NavbarBottom";
+import MenuLinks from './MenuLinks'
 
 function Menu() {
     const [showModal, setShowModal] = useState(false);
@@ -15,7 +14,6 @@ function Menu() {
 
   return (
     <>
-        <div>
         <button id="menu_icon" onClick={handleModal}>
             <HiOutlineMenu />
         </button>
@@ -24,22 +22,16 @@ function Menu() {
             <div className="modal show fade menu_modal" tabIndex="-1" role="dialog">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
-                        <div className="modal-header">
+                        <div className="modal-body">
                             <button type="button" className="close" onClick={handleModal}>
                                 <span>&times;</span>
                             </button>
-                        </div>
-                        <div className="modal-body">
-                            <NavbarBottom />
-                            <ul className="navbar-nav">
-                                <NavbarTopLink />
-                            </ul>
+                            <MenuLinks />
                         </div>
                     </div>
                 </div>
             </div>
         )}
-    </div>
     </>
   )
 }

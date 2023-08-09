@@ -1,0 +1,11 @@
+@media (width < 750px) {
+
+    #menu_icon {
+        display: block;
+    }
+
+    .navbar_top > ul,
+     .navbar_bottom {
+        display: none;
+    }
+}

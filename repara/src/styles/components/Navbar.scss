@@ -15,18 +15,24 @@
 
     .navbar_top__item {
         margin-left: 2em;
+        display: flex;
+        flex-direction: row-reverse;
 
-        a:not(#navbar_top__logo) {
-            @include transition_text;
-            padding: 0;
-        }
+        span {
+            margin-left: 2em;
+
+            a:not(#navbar_top__logo) {
+                @include transition_text;
+                padding: 0;
+            }
+        
+            p {
+                margin: 0;
+                color: $text-light-color;
     
-        p {
-            margin: 0;
-            color: $text-light-color;
-
-            svg {
-                color: $secondary-color;
+                svg {
+                    color: $secondary-color;
+                }
             }
         }
     }
