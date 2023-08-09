@@ -21,3 +21,7 @@ a {
 .button {
   @include btn;
 }
+
+.text_secondary {
+  color: $secondary-color;
+}

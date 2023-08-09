@@ -2,6 +2,7 @@ import './App.scss'
 
 import Navbar from './components/header/Navbar'
 import Carousel from './components/carousel/Carousel'
+import Services from './components/services/Services'
 
 function App() {
 
@@ -11,7 +12,9 @@ function App() {
         <Navbar />
         <Carousel />
       </div>
-      <p>dsadsadsadsaas</p>
+      <main>
+        <Services />
+      </main>
     </>
   )
 }

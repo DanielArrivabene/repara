@@ -1,0 +1,43 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#services {
+    margin-top: 5em;
+    color: #000;
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 1.4em;
+    }
+
+    .services_container {
+        justify-content: center;
+
+        .service_card {
+            background-color: $card-bg-color;
+            box-shadow: 0px 0px 5px #00000044;
+            margin: 1em;
+            padding: 1.5em;
+            border-radius: $border-radious;
+            border-top: 10px solid $main-color;
+            transition: all .3s;
+
+            &:hover {
+                border-top-color: $secondary-color;
+            }
+
+            svg {
+                font-size: 4em;
+                color: $icon-color;
+                margin-bottom: .32em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+        }
+    }
+}
