@@ -5,6 +5,7 @@ import Carousel from './components/carousel/Carousel'
 import Services from './components/services/Services'
 import About from './components/about/About'
 import Differentials from './components/differentials/Differentials'
+import Depoiments from './components/depoiments/Depoiments'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Services />
         <About />
         <Differentials />
+        <Depoiments />
       </main>
     </>
   )
