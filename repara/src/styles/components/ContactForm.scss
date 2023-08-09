@@ -1,0 +1,56 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#contact_form {
+    padding: 5em 0;
+    background-color: #fff;
+
+    h2 {
+        color: #000;
+        font-weight: bolder;
+        margin-bottom: 1.5em;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: row;
+        margin-right: -5px;
+        margin-left: -5px;
+
+        .form-group {
+            margin-bottom: 2em;
+            margin-right: .5em;
+
+            input {
+                width: 100%;
+                border: none;
+                height: 50px;
+                padding-left: 25px;
+                background-color: transparent;
+                border: 1px solid #ccc;
+                outline: none;
+                color: #000000;
+                border-radius: 0;
+            }
+        }
+    }
+
+    .description {
+        height: 120px;
+        border-radius: 0;
+        margin-right: -5px;
+        margin-left: -5px;
+        padding-left: 25px;
+        width: 102%;
+    }
+
+    .form-control:focus {
+        box-shadow: 0 0 0 0.15rem #15526397;
+    }
+
+    button {
+        @include btn;
+        margin-top: 2em;
+        border-radius: 0;
+    }
+}

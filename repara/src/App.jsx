@@ -6,6 +6,7 @@ import Services from './components/services/Services'
 import About from './components/about/About'
 import Differentials from './components/differentials/Differentials'
 import Depoiments from './components/depoiments/Depoiments'
+import ContactForm from './components/contact-form/ContactForm'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <About />
         <Differentials />
         <Depoiments />
+        <ContactForm />
       </main>
     </>
   )
