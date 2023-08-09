@@ -18,11 +18,13 @@ function ServicesCard() {
     <div className="services_container row">
         {services && services.map((service, index) => (
             <article key={index} className="service_card col-md-5">
-                <div className="service_icon">
-                    {service.icon}
+                <div className="card">
+                    <div className="service_icon">
+                        {service.icon}
+                    </div>
+                    <h3>{service.title.toUpperCase()}</h3>
+                    <p>{service.description}</p>
                 </div>
-                <h3>{service.title.toUpperCase()}</h3>
-                <p>{service.description}</p>
             </article>
         ))}
     </div>
