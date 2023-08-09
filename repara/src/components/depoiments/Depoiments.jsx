@@ -15,7 +15,7 @@ function Depoiments() {
         <h2>Depoimentos de Clientes</h2>
 
         <article className="container p-4">
-            {depoiments.map((item, index) => (
+            {depoiments && depoiments.map((item, index) => (
                 <div key={index} className="depoiment">
                     <h3>{item.name} <span><BsHeartFill /></span></h3>
                     <p>{item.text}</p>
