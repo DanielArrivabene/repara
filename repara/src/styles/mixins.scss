@@ -27,7 +27,7 @@
 @mixin transition_text {
     color: $text-light-color;
     -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    transition: all 0.2s;
 
     &:hover {
         color: $secondary-color;
