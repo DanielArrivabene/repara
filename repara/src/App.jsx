@@ -3,6 +3,7 @@ import './App.scss'
 import Navbar from './components/header/Navbar'
 import Carousel from './components/carousel/Carousel'
 import Services from './components/services/Services'
+import About from './components/about/About'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       </div>
       <main>
         <Services />
+        <About />
       </main>
     </>
   )

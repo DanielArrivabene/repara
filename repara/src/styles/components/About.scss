@@ -1,0 +1,29 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#about {
+    margin-top: 5em;
+
+    article {
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+
+        .desctipton {
+            color: #000;
+            margin-left: 1em;
+
+                h2 {
+                    font-weight: bolder;
+                }
+        }
+
+        .image {
+            margin-right: 1em;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
