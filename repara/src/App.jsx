@@ -4,6 +4,7 @@ import Navbar from './components/header/Navbar'
 import Carousel from './components/carousel/Carousel'
 import Services from './components/services/Services'
 import About from './components/about/About'
+import Differentials from './components/differentials/Differentials'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <main>
         <Services />
         <About />
+        <Differentials />
       </main>
     </>
   )
