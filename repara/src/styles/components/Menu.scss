@@ -16,7 +16,9 @@
 
     .modal-dialog {
         margin: 0 auto;
-        width: 80%
+        width: 50%;
+        min-width: 200px;
+        z-index: 99;
     }
 
     .modal-content {
