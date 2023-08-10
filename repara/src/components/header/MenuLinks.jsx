@@ -1,19 +1,20 @@
 function MenuLinks() {
 
     const links = [
-        {text: 'Home', destiny: '#'},
-        {text: 'Serviços', destiny: '#'},
-        {text: 'Diferenciais', destiny: '#'},
-        {text: 'Sobre', destiny: '#'},
-        {text: 'Contato', destiny: '#'},
+        {name: 'Home', destiny: '#home'},
+        {name: 'Serviços', destiny: '#services'},
+        {name: 'Sobre nós', destiny: '#about'},
+        {name: 'Diferenciais', destiny: '#differentials'},
+        {name: 'Depoimentos', destiny: '#depoiments_container'},
+        {name: 'Contato', destiny: '#contact_form'},
     ]
 
   return (
     <div className="navbar_menu navbar">
         <ul className="navbar-nav">
-            {links && links.map((item) => (
-                <li key={item.text} className="navbar_menu__item nav-item">
-                    <a className="nav-link" href={item.destiny}>{item.text}</a>
+            {links && links.map((link) => (
+                <li key={link.name} className="navbar_menu__item nav-item">
+                    <a className="nav-link" href={link.destiny}>{link.name}</a>
                 </li>
             ))}
         </ul>
