@@ -6,8 +6,8 @@ function Depoiments() {
 
     const depoiments = [
         {name: 'Ana', text: 'A bateria do meu celular estava vicada. Eu levei na Repara e eles trocaram a bateria do meu celular na hora. Fiquei muito satisfeita com o resultado!'},
-        {name: 'Ana', text: 'A bateria do meu celular estava vicada. Eu levei na Repara e eles trocaram a bateria do meu celular na hora. Fiquei muito satisfeita com o resultado!'},
-        {name: 'Ana', text: 'A bateria do meu celular estava vicada. Eu levei na Repara e eles trocaram a bateria do meu celular na hora. Fiquei muito satisfeita com o resultado!'},
+        {name: 'Miguel', text: 'A bateria do meu celular estava vicada. Eu levei na Repara e eles trocaram a bateria do meu celular na hora. Fiquei muito satisfeita com o resultado!'},
+        {name: 'Silvia', text: 'A bateria do meu celular estava vicada. Eu levei na Repara e eles trocaram a bateria do meu celular na hora. Fiquei muito satisfeita com o resultado!'},
     ]
 
   return (
