@@ -1,12 +1,12 @@
 function FooterLinks() {
 
     const links = [
-        {name: 'Home', destiny: '#'},
-        {name: 'Serviços', destiny: '#'},
-        {name: 'Sobre nós', destiny: '#'},
-        {name: 'Diferenciais', destiny: '#'},
-        {name: 'Home', destiny: '#'},
-        {name: 'Contato', destiny: '#'},
+        {name: 'Home', destiny: '#home'},
+        {name: 'Serviços', destiny: '#services'},
+        {name: 'Sobre nós', destiny: '#about'},
+        {name: 'Diferenciais', destiny: '#differentials'},
+        {name: 'Depoimentos', destiny: '#depoiments_container'},
+        {name: 'Contato', destiny: '#contact_form'},
     ]
 
   return (

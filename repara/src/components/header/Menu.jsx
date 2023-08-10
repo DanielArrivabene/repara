@@ -26,7 +26,7 @@ function Menu() {
                             <button type="button" className="close" onClick={handleModal}>
                                 <span>&times;</span>
                             </button>
-                            <MenuLinks />
+                            <MenuLinks handleModal={handleModal} />
                         </div>
                     </div>
                 </div>

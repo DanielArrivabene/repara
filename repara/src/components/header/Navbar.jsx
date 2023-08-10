@@ -6,7 +6,7 @@ import Menu from "./Menu";
 
 function Navbar() {
   return (
-    <header>
+    <header id="home">
         <nav>
             <div className="navbar_top navbar navbar-expand-lg p-2 px-4">
                 <a id="navbar_top__logo" className="navbar-brand" href="#">Repara!</a>
