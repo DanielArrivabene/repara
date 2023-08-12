@@ -1,6 +1,10 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
+.modal-backdrop {
+    z-index: -1 !important;
+}
+
 #menu_icon {
     @include transition_text;
     display: none;
@@ -10,51 +14,49 @@
 }
 
 .menu_modal {
-    display: block;
     color: $text-light-color;
     background-color: #000000a1;
 
     .modal-dialog {
-        margin: 0 auto;
+        position: absolute;
+        margin: auto;
         width: 50%;
-        min-width: 200px;
-        z-index: 99;
+        min-width: 180px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
     }
 
     .modal-content {
-        @extend .menu_modal;
         background-color: $main-color-dark;
+        padding: 1.2em;
     }
 
     .modal-header {
-        justify-content: end;
+        justify-content: center;
         border-bottom: none;
         padding: 0 2em;
 
-        
+        #menu_close {
+            @include transition_text;
+            background-color: transparent;
+            border: none;
+            font-size: 1.4em;
+
+            svg {
+                @include transition_text;
+                font-size: 1.5em;
+                z-index: 99;
+            }
+        }
     }
 
     .modal-body {
         text-align: end;
         padding: 0 1em;
-
-        button {
-            background-color: transparent;
-            border: none;
-            z-index: 99;
-            position: relative;
-
-            span {
-                @include transition_text;
-                display: inline-block;
-                font-size: 4em;
-                height: 20px;
-            }
-        }
         
         .navbar_menu {
             justify-content: center;
-            margin-top: -65px;
 
             li {
                 text-align: center;

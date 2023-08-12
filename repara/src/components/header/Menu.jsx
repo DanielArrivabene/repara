@@ -1,37 +1,33 @@
 import { HiOutlineMenu } from "react-icons/hi";
-import { useState } from 'react';
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 import "../../styles/components/Menu.scss";
 
 import MenuLinks from './MenuLinks'
 
 function Menu() {
-    const [showModal, setShowModal] = useState(false);
-
-  const handleModal = () => {
-    setShowModal(!showModal);
-  };
 
   return (
     <>
-        <button id="menu_icon" onClick={handleModal}>
+        <button id="menu_icon" className="btn" data-bs-toggle="modal"data-bs-target="#modal">
             <HiOutlineMenu />
         </button>
 
-        {showModal && (
-            <div className="modal show fade menu_modal" tabIndex="-1" role="dialog">
-                <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                        <div className="modal-body">
-                            <button type="button" className="close" onClick={handleModal}>
-                                <span>&times;</span>
-                            </button>
-                            <MenuLinks handleModal={handleModal} />
-                        </div>
+        <div id="modal" className="modal fade menu_modal">
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <button id="menu_close" className="btn" data-bs-toggle="modal"data-bs-target="#modal">
+                            <AiOutlineCloseCircle />
+                        </button>
+                    </div>
+
+                    <div className="modal-body">
+                        <MenuLinks/>
                     </div>
                 </div>
             </div>
-        )}
+        </div>
     </>
   )
 }
