@@ -1,19 +1,32 @@
 @media (width < 750px) {
+  .full_screen {
+    height: 85vh;
+  }
 
-    .full_screen {
-        height: 85vh;
-    }
+  #menu_icon {
+    display: block;
+  }
 
-    #menu_icon {
-        display: block;
-    }
+  .navbar_top > ul,
+  .navbar_bottom {
+    display: none;
+  }
 
-    .navbar_top > ul,
-     .navbar_bottom {
-        display: none;
-    }
+  .service_card {
+    padding: 1em 2em !important;
+  }
+}
 
-    .service_card {
-        padding: 1em 2em !important;
+@media (width < 1200px) {
+  .banner__data {
+    left: 50% !important;
+    text-align: center;
+    width: 80% !important;
+
+    h2 {
+      font-size: 2.6em;
+      font-weight: 800;
+      margin-bottom: 0.4em;
     }
+  }
 }

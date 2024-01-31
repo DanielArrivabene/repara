@@ -16,6 +16,13 @@
                 h2 {
                     font-weight: bolder;
                 }
+
+                a {
+                    @include btn;
+                    display: block;
+                    width: fit-content;
+                    margin-top: .5em;
+                }
         }
 
         .image {
