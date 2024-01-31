@@ -1,6 +1,6 @@
 
 // eslint-disable-next-line react/prop-types
-function MenuLinks({handleModal}) {
+function MenuLinks({handleMenu}) {
 
     const links = [
         {name: 'Home', destiny: '#home'},
@@ -16,7 +16,7 @@ function MenuLinks({handleModal}) {
         <ul className="navbar-nav">
             {links && links.map((link) => (
                 <li key={link.name} className="navbar_menu__item nav-item">
-                    <a className="nav-link" href={link.destiny}  onClick={handleModal}>{link.name}</a>
+                    <a className="nav-link" href={link.destiny} onClick={handleMenu}>{link.name}</a>
                 </li>
             ))}
         </ul>

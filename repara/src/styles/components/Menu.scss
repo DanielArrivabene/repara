@@ -1,70 +1,41 @@
 @import '../variables.scss';
 @import '../mixins.scss';
 
-.modal-backdrop {
-    z-index: -1 !important;
-}
-
 #menu_icon {
-    @include transition_text;
-    display: none;
-    background-color: transparent;
-    border: none;
-    font-size: 2.3em;
+  @include transition_text;
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 2.3em;
 }
 
-.menu_modal {
-    color: $text-light-color;
-    background-color: #000000a1;
+#menu_modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .modal-dialog {
-        position: absolute;
-        margin: auto;
-        width: 50%;
-        min-width: 180px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) !important;
+  .menu_container {
+    background-color: $main-color-dark;
+    padding: 1em 2em;
+    text-align: center;
+    border-radius: 20px;
+
+    svg {
+        font-size: 1.7em;
     }
 
-    .modal-content {
-        background-color: $main-color-dark;
-        padding: 1.2em;
+    * {
+      color: $text-light-color !important;
     }
 
-    .modal-header {
-        justify-content: center;
-        border-bottom: none;
-        padding: 0 2em;
-
-        #menu_close {
-            @include transition_text;
-            background-color: transparent;
-            border: none;
-            font-size: 1.4em;
-
-            svg {
-                @include transition_text;
-                font-size: 1.5em;
-                z-index: 99;
-            }
-        }
+    ul {
+        text-align: center;
     }
-
-    .modal-body {
-        text-align: end;
-        padding: 0 1em;
-        
-        .navbar_menu {
-            justify-content: center;
-
-            li {
-                text-align: center;
-
-                a {
-                    @include transition_text;
-                }
-            }
-        }
-    }
+  }
 }
